@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3</title>
+    <script>
+      function myFunction() {
+        var name = document.getElementById('name').value;
+        var city = document.getElementById('city').value;
+        console.log(`Name and city is ${name},${city}`);
+        document.querySelector('#uname').innerHTML = `Hai ${name}!`;
+        document.querySelector('#ucity').innerHTML = `from ${city}`;
+      }
+    </script>
+  </head>
+  <body>
+    <h1 style="color: green; text-align: center">Assignment 3</h1>
+    <h3>
+      1.Create Two input fields for name and city and take their values and
+      print it together on the page when the user clicks on the add button.
+    </h3>
+    <div>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Name" />
+      <label for="name">City</label>
+      <input type="text" name="city" id="city" placeholder="City" />
+      <button onclick="myFunction()" type="">Add</button>
+      <p><span id="uname"></span> <span id="ucity"></span></p>
+    </div>
+  </body>
+</html>
